@@ -43,5 +43,3 @@ INSERT INTO Clientes (Nombre, Apellido, Telefono, DNI, Domicilio, CodigoBiciclet
 
 SELECT C.Nombre, C.Apellido, B.Marca, B.Modelo, TB.Descripcion AS TipoBicicleta FROM Clientes AS C LEFT JOIN Bicicletas AS B ON C.CodigoBicicleta = B.Codigo LEFT JOIN TiposBicicleta AS TB ON B.Tipo = TB.Codigo;
 
-
-select * from bicicletas;
